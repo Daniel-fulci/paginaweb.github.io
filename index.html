@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilo3.css">
+    <link rel="stylesheet" type= "text/css" href="estilos.css">
+    <!--De esta manera utilizando link se puede incorporar una hoja de estilo
+    css a la pagina en un espacio determinado-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--De esta manera debajo de Head se utiliza el metodo @import para incorporar
+    estilo css a una parte determinada de la pagina-->
+    <style>
+        @import"estilo2.css";
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro mundo S.A.</title>
+</head>
+<body>
+   <!--Se realiza el titulo principal utilizando h1 para crearlo-->
+    <h1 style="color: black;">El cambio climatico es real y nos afecta a tod@s</h1>
+    <nav>
+        <p><a href="#¿quienes somos?">¿quienes somos?</a></p>
+        <p><a href="#Actividades realizadas">Actividades realizadas</a></p>
+        <p><a href="#Proximos eventos">Proximos eventos</a></p>
+        <p><a href="#Temas de interes">Temas de interes</a></p>
+    </nav>
+    <!--En este fragmento del codigo se utiliza css con la palabra style para generar color de texto,
+    con la propiedad text decoration: underline se genera un subrayado, ademas se utiliza el contenedor
+    span para envolver una seccion de texto en este caso el parrafo para indicar quienes somos y de esta
+    manera el texto escogido toma un color de resaltado-->
+    <h2 id="¿quienes somos?" style="color: red; text-decoration: underline;" >¿quienes somos? </h2>
+    <p> <span style="background-color:green ;" >Somos una sociedad sin fines de lucro de nombre <br>
+    "Nuestro Mundo" que busca concientizar sobre el cambio climatico que <br>
+    se manifiesta en nuestros dias, se sabe que el cambio climatico <br>
+    es algo que sucede de forma natural, pero en las ultimas<br>
+    decadas esta siendo acelerado por la mano de la humanidad.</p></span>
+    <h3 id="Actividades realizadas">Actividades realizadas</h3>
+    <!--Se realiza una lista no ordenanada utilizando la etiqueta ul-->
+    <ul>
+        <li>Concierto "vida verde" parque O'higgins</li>
+        <li>Acto cultural "salvemos nuestros bosques" plaza Villarrica </li>
+        <li>Concierto gratuito en Iquique "el planeta nos necesita"</li>
+    </ul>
+    <h4 id="Proximos eventos" style="color: yellow;">Proximos eventos</h4>
+    <!--Se realiza una tabla para los proximos eventos utilizando la etiqueta table
+    se utiliza el atributo bgcolor para colorear la tabla-->
+    <table>
+        <tr>
+            <th>Nombre evento</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Lugar</th>
+        </tr>
+        <tr>
+            <td>Granja educativa</td>
+            <td>13-04-2024</td>
+            <td>08:00 a 18:00</td>
+            <td>Parque quinta normal, Santiago</td>
+        </tr>
+        <tr>
+            <td>"Nuestro futuro" obra teatral</td>
+            <td>19-04-2024</td>
+            <td>18:00 a 20:30</td>
+            <td>Plaza de armas de temuco</td>
+        </tr>
+        <tr>
+            <td>Concierto rock "todos unidos"</td>
+            <td>27-04-2024</td>
+            <td>10:00 a 20:00</td>
+            <td>Movistar arena, Santiago</td>
+        </tr>
+    </table>
+    <h5 id="Temas de interes" style="color: red;">Temas de interes</h5>
+    <!--En este segmento temas de interes se utiliza el contenedor span para 
+    dar colorido a un segmento de la escritura, ademas se incluyen imagenes 
+    con la etiqueta img y un audio con la etiqueta audio-->
+    <p>
+        <span style="background-color:red ;">Nuestros temas de interes es el uso de energias verdes <br>
+        y asi lograr una transicion de energias fosiles para contrarrestar<br>
+        el cambio climatico.<br>
+        Tambien la biodiversidad, el cuidado de nuestra flora y fauna<br>
+        de Chile, America y el mundo.</span>
+    </p>
+    <img src="imagen/clima.jpg" width="350" height="250" alt="">
+    <img src="imagen/verde.jpg" width="350" height="250" alt="">
+    <img src="imagen/biodiversidad.jpg" width="350" height="250" alt=""> <br> <br>
+    <p>
+    <span style="background-color:red ;">A continuacion escuchemos un audio y entender <br>
+    de mejor manera el cambio climatico que nos afecta a todos.</span></p>
+    <audio controls>
+      <source src="El cambio climático.mp3" type="audio/mpeg">
+      <source src="El cambio climático.ogg" type="audio/ogg">
+
+    </audio> <br> <br>
+    <!--Se utiliza el elemento ancla a para crear enlaces a la misma pagina 
+    como tambien a una pagina externa en esta caso de las naciones unidad -->
+    <a href="https://www.un.org/es/climatechange/what-is-climate-change" target="_blank">
+        <span style="background-color:red ;"> Sigue descubriendo mas del cambio climatico</span> </a>
+    <!--En este fragmento se incorpora el codigo de uso de marco flotante 
+    para la reproduccion de un video de youtube esto se logra utilizando 
+    el elemento <iframe> el cual permite incrustar otra pagina en la actual-->
+    <h3>Videos relacionados al cambio climatico:</h3>
+    <p>En el siguiente video podras descubrir un poco mas con <br>
+    el interesante tema del cambio climatico y como todos podemos<br>
+    ayudar a mitigar el impacto</p> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0rzAluuejUw?si=eI5-FuTIDy_5qQMc" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+</body>
+</html>
